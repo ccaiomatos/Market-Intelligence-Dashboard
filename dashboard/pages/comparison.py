@@ -29,6 +29,7 @@ def render():
             st.session_state.selected_assets.append(asset)
     
     st.write("Ativos selecionados:")
+    st.caption("Defina o peso (%) de cada ativo na carteira. Os pesos representam a distribuição do capital investido e devem somar 100%.")
     weights = []
     n_assets = len(st.session_state.selected_assets)
     for asset in st.session_state.selected_assets:
