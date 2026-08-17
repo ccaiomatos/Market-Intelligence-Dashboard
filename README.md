@@ -6,7 +6,7 @@ Projeto de portfólio construído para demonstrar organização de código, aná
 
 ---
 
-## Overview
+## Visão Geral
 
 A aplicação é dividida em três telas Streamlit. O usuário busca um ativo por nome ou ticker (via Yahoo Finance), e a partir daí pode:
 
@@ -44,7 +44,7 @@ Toda a lógica de cálculo (aquisição de dados, métricas financeiras e ML) fi
 
 ---
 
-## Financial Analysis
+## Análise Financeira
 
 **Retorno diário e acumulado**
 Retorno percentual entre pregões consecutivos, composto ao longo do tempo para obter o retorno acumulado do período.
@@ -81,7 +81,7 @@ O próprio dashboard já deixa isso explícito na interface: em dados financeiro
 
 ---
 
-## Architecture
+## Arquitetura
 
 ```mermaid
 flowchart TD
@@ -127,7 +127,7 @@ flowchart TD
 
 ---
 
-## Project Structure
+## Estrutura do Projeto
 
 ```text
 market-intelligence-dashboard/
@@ -160,7 +160,7 @@ market-intelligence-dashboard/
 
 ---
 
-## Getting Started
+## Como iniciar:
 
 ```bash
 git clone <repo-url>
@@ -182,7 +182,7 @@ pytest
 
 ---
 
-## Usage
+## Uso
 
 1. Na página **Visão Geral**, digite o nome ou ticker de um ativo (ex: "Petrobras", "Apple", "Bitcoin"), escolha um dos resultados e confirme para ver preço, retornos, volatilidade, drawdown e Sharpe Ratio.
 2. Na página **Comparação**, adicione dois ou mais ativos à carteira, ajuste o peso (%) de cada um até somarem 100% e visualize o retorno acumulado, a correlação entre os ativos e as métricas consolidadas da carteira.
@@ -199,7 +199,7 @@ pytest
 
 ---
 
-## Limitations
+## Limitações
 
 - Dependência total do Yahoo Finance para preços, câmbio e busca de ativos — sem fonte alternativa em caso de indisponibilidade.
 - A conversão de moeda usa a taxa de câmbio de fechamento como proxy, sem considerar spread ou custos reais de conversão.
@@ -209,7 +209,7 @@ pytest
 
 ---
 
-## Future Improvements
+##  Futuras melhoras
 
 **Short-term**
 - Tratamento de erro mais robusto para falhas de rede nas chamadas ao yfinance e à API do Banco Central
@@ -228,7 +228,7 @@ Este projeto tem finalidade educacional e de portfólio. As análises e métrica
 
 ---
 
-## Author
+## Autor
 
 **Caio Cordeiro Matos**
 [GitHub](https://github.com/seu-usuario) · [LinkedIn](https://linkedin.com/in/seu-usuario)
