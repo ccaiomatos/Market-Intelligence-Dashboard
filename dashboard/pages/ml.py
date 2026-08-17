@@ -11,23 +11,29 @@ from dashboard.data_access import load_data, search_assets_cached
 def render():
     st.title("Machine Learning — Previsão de Tendência")
     st.caption(
-        "Estimativa da probabilidade de alta com base em um modeelo treinado com base nos padrões anteriores"
+        "Estimativa da probabilidade de alta com base em um modelo treinado com base nos padrões anteriores"
     )
 
-    query = st.text_input("Buscar ativo (ex: Petrobras, Apple, Bitcoin)")
+    with st.form("busca_ativo"):
+        query = st.text_input("Buscar ativo (ex: Petrobras, Apple, Bitcoin)")
+        buscar = st.form_submit_button("Buscar")
+
+    if not buscar or not query:
+        st.info("Digite algo e clique em Buscar.")
+        return
+
     results = search_assets_cached(query)
-    
     if not results:
-      st.info("Digite algo pra buscar um ativo.")
-      return
-    
+        st.warning("Nenhum ativo encontrado.")
+        return
+
     labels = [f"{r['name']} ({r['ticker']})" for r in results]
     choice = st.selectbox("Resultados", options=labels)
     candidate = results[labels.index(choice)]
 
     if not st.button("Confirmar ativo"):
-      st.stop()
-    
+        st.stop()
+
     ticker = candidate["ticker"]
 
     try:
