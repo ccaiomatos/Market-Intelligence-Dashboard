@@ -192,9 +192,6 @@ pytest
 
 ## Screenshots
 
-_Screenshots ainda não adicionados._
-
-```markdown
 ![Visão Geral](docs/images/visao-geral.png)
 ![Comparação](docs/images/comparacao.png)
 ![Machine Learning](docs/images/machine-learning.png)
