@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Analise Inteligente de Mercado", layout = "wide")
+st.set_page_config(page_title="Market Intelligence Dashboard", layout = "wide")
 
 
 pages = [
