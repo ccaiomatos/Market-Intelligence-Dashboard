@@ -11,7 +11,7 @@ from dashboard.data_access import load_data, search_assets_cached
 def render():
     st.title("Machine Learning — Previsão de Tendência")
     st.caption(
-        "Estimativa da probabilidade de alta com base em um modeelo treinado com base nos padrões anteriores"
+        "Estimativa da probabilidade de alta com base em um modelo treinado com base nos padrões de retornos anteriores"
     )
 
     query = st.text_input("Buscar ativo (ex: Petrobras, Apple, Bitcoin)")
