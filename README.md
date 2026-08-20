@@ -1,7 +1,7 @@
 # Market Intelligence Dashboard
 
-🔗 **[Acesse o app aqui] (Pode demorar um pouco no primeiro carregamento) 
-(https://market-intelligence-dashboard-7nvfhcavxiywfpcj2gkxrt.streamlit.app/)**
+🌐 Live Demo: (https://market-intelligence-dashboard-7nvfhcavxiywfpcj2gkxrt.streamlit.app/)**
+(A aplicação pode levar alguns segundos para responder no primeiro acesso devido à hospedagem em serviço com suspensão por inatividade).
 
 Dashboard em Python para análise quantitativa de ativos financeiros (ações, criptomoedas e índices), com busca de ativos em tempo real, comparação de carteiras e um módulo de Machine Learning para classificação da direção do retorno diário.
 
